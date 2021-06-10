@@ -21,7 +21,8 @@ callbacks         表现最佳模型和tokenizer
 
 badcase           错例的集合
 
-backup            表现最佳模型备份 \n
+backup            表现最佳模型备份 
+
 script            纠错脚本、预测脚本
 
 
