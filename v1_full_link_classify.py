@@ -5,6 +5,7 @@ from tensorflow.keras.utils import Sequence
 import math
 import os
 import sys
+import pickle
 import tensorflow as tf
 import sklearn
 from sklearn.model_selection import train_test_split
@@ -30,7 +31,6 @@ for module in mpl, np, pd, sklearn, tf, keras:
 
 from tensorflow.compat.v1 import ConfigProto
 from tensorflow.compat.v1 import InteractiveSession
-from tensorflow.compat.v1.keras import backend as K
 # 定义TensorFlow配置
 config = ConfigProto()
 # 配置GPU内存分配方式，按需增长，很关键
@@ -40,10 +40,11 @@ session = InteractiveSession(config=config)
 
 
 # 一,常量定义
-data_path = 'data/v6_correct_data.csv'
+data_path = 'data/v7_correct_data.csv'
 save_weight_path = "callbacks/best_model.weights"
 save_model_path = "callbacks/fashion_mnist_model.h5"
 badcase_path = "badcase/test.csv"
+dict_word_pkl_path = "callbacks/dict_word.pkl"
 
 # 二,变量定义
 # epochs = 40
@@ -54,8 +55,9 @@ batch_size = 32
 # 实例化 分词器 Tokenizer
 tokenizer = Tokenizer(filters='', char_level=True)
 
-df = pd.read_csv(data_path,header=0, names=['text', 'label'], encoding='utf-8')
-# df = pd.read_csv(data_path,header=0, names=['text', 'label'], encoding='gbk')
+# df = pd.read_csv(data_path,header=0, names=['text', 'label'], encoding='utf-8')
+df = pd.read_csv(data_path,header=0, names=['text', 'label'], encoding='gbk')
+df = df.sample(frac=1)
 
 # 将 data 分词
 tokenizer.fit_on_texts(df['text'])
@@ -63,13 +65,19 @@ x_data = tokenizer.texts_to_sequences(df['text'])
 y_data = df['label']
 
 # 获取 - 训练数据,验证数据,测试数据
-x_train, x_test, y_train, y_test = train_test_split(x_data, y_data,test_size=0.2,
+x_train, x_test, y_train, y_test = train_test_split(x_data, y_data,test_size=0.3,
                                                     shuffle=True, random_state=1)
 
-x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train,test_size=0.2,
+x_train, x_valid, y_train, y_valid = train_test_split(x_train, y_train,test_size=0.3,
                                                     shuffle=True, random_state=1)
 # 获取词典数量
-vocab_size = len(tokenizer.word_index)
+dict_word = tokenizer.word_index
+vocab_size = len(dict_word)
+
+# 将数据写入pickle文件
+if not os.path.exists(dict_word_pkl_path):
+    with open(dict_word_pkl_path,'wb') as f:
+        pickle.dump(tokenizer, f)
 
 print("训练数据样本：\n",x_train[0])
 print("训练数据样本分布：\n", y_train.value_counts(),"共%d条"%(len(y_train)))
@@ -170,7 +178,7 @@ x_test = pd.DataFrame(x_test)
 evaluate_rate = model.evaluate(
     x_test, y_test,
     batch_size = batch_size,
-    verbose = 2) 
+    verbose = 1)
  
 print("估计器预测测试数据集的 损失和准确率分别为:%s,%s"%tuple(evaluate_rate))
 
