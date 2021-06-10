@@ -9,6 +9,7 @@ NLP往次募集说明书-字段分类
 
 
 一，各文件介绍
+
 requirement.txt   需安装的环境软件
 demo.py           实现预测初稿
 data              往次募集标题数据（标注）
