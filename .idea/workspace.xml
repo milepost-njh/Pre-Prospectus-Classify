@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff6a8a4f-de92-41c3-92ee-eca880b9caf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/script/correct_data/correct_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/correct_data/correct_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/predict_data/pre_res.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/predict_data/pre_res.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v2_rnn_classify.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v3_lstm_classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup/fashion_mnist_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/backup/fashion_mnist_model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/badcase/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/badcase/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callbacks/dict_word.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/callbacks/dict_word.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/callbacks/fashion_mnist_model.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nlp_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp_classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v1_full_link_classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/v1_full_link_classify.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +37,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../intelligence_write/yx_server/intelligence_write_api/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MT_Seq2seq_Attention" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.demo">
+  <component name="RunManager" selected="Python.v1_full_link_classify">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Pre-Prospectus-Classify" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -48,6 +55,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nlp_classify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pre-Prospectus-Classify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nlp_classify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,10 +107,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="v2_rnn_classify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pre-Prospectus-Classify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v2_rnn_classify.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="v3_lstm_classify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Pre-Prospectus-Classify" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v3_lstm_classify.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demo" />
         <item itemvalue="Python.v1_full_link_classify" />
+        <item itemvalue="Python.v2_rnn_classify" />
+        <item itemvalue="Python.nlp_classify" />
+        <item itemvalue="Python.v3_lstm_classify" />
+        <item itemvalue="Python.demo" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +173,12 @@
       <updated>1623052064329</updated>
       <workItem from="1623052065365" duration="17252000" />
       <workItem from="1623147126693" duration="1814000" />
-      <workItem from="1623288393798" duration="1652000" />
+      <workItem from="1623288393798" duration="8220000" />
+      <workItem from="1623316532751" duration="1432000" />
+      <workItem from="1623375908452" duration="4356000" />
+      <workItem from="1623585936756" duration="2418000" />
+      <workItem from="1623722364724" duration="683000" />
+      <workItem from="1623809486210" duration="1341000" />
     </task>
     <servers />
   </component>
@@ -105,37 +186,40 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="731" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623289171833">
+    <state x="731" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623310195755">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state x="731" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.24.1853.1056@67.24.1853.1056" timestamp="1623289171833" />
-    <state x="781" y="297" key="FileChooserDialogImpl" timestamp="1623288417051">
+    <state x="731" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.24.1853.1056@67.24.1853.1056" timestamp="1623310195755" />
+    <state x="438" y="149" key="FileChooserDialogImpl" timestamp="1623815288962">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state x="781" y="297" key="FileChooserDialogImpl/67.24.1853.1056@67.24.1853.1056" timestamp="1623288417051" />
-    <state width="1807" height="231" key="GridCell.Tab.0.bottom" timestamp="1623146389323">
+    <state x="438" y="149" key="FileChooserDialogImpl/67.24.1853.1056@67.24.1853.1056" timestamp="1623815288962" />
+    <state width="1807" height="216" key="GridCell.Tab.0.bottom" timestamp="1623582483954">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1807" height="231" key="GridCell.Tab.0.bottom/67.24.1853.1056@67.24.1853.1056" timestamp="1623146389323" />
-    <state width="1807" height="231" key="GridCell.Tab.0.center" timestamp="1623146389323">
+    <state width="1807" height="216" key="GridCell.Tab.0.bottom/67.24.1853.1056@67.24.1853.1056" timestamp="1623582483954" />
+    <state width="1807" height="216" key="GridCell.Tab.0.center" timestamp="1623582483953">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1807" height="231" key="GridCell.Tab.0.center/67.24.1853.1056@67.24.1853.1056" timestamp="1623146389323" />
-    <state width="1807" height="231" key="GridCell.Tab.0.left" timestamp="1623146389323">
+    <state width="1807" height="216" key="GridCell.Tab.0.center/67.24.1853.1056@67.24.1853.1056" timestamp="1623582483953" />
+    <state width="1807" height="216" key="GridCell.Tab.0.left" timestamp="1623582483953">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1807" height="231" key="GridCell.Tab.0.left/67.24.1853.1056@67.24.1853.1056" timestamp="1623146389323" />
-    <state width="1807" height="231" key="GridCell.Tab.0.right" timestamp="1623146389323">
+    <state width="1807" height="216" key="GridCell.Tab.0.left/67.24.1853.1056@67.24.1853.1056" timestamp="1623582483953" />
+    <state width="1807" height="216" key="GridCell.Tab.0.right" timestamp="1623582483954">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
-    <state width="1807" height="231" key="GridCell.Tab.0.right/67.24.1853.1056@67.24.1853.1056" timestamp="1623146389323" />
+    <state width="1807" height="216" key="GridCell.Tab.0.right/67.24.1853.1056@67.24.1853.1056" timestamp="1623582483954" />
     <state x="487" y="174" key="SettingsEditor" timestamp="1623288826489">
       <screen x="67" y="24" width="1853" height="1056" />
     </state>
     <state x="487" y="174" key="SettingsEditor/67.24.1853.1056@67.24.1853.1056" timestamp="1623288826489" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pre_Prospectus_Classify$v1_full_link_classify.coverage" NAME="v1_full_link_classify Coverage Results" MODIFIED="1623139568526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pre_Prospectus_Classify$v3_lstm_classify.coverage" NAME="v3_lstm_classify Coverage Results" MODIFIED="1623312727888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pre_Prospectus_Classify$v2_rnn_classify.coverage" NAME="v2_rnn_classify Coverage Results" MODIFIED="1623564451847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pre_Prospectus_Classify$nlp_classify.coverage" NAME="nlp_classify Coverage Results" MODIFIED="1623564274631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pre_Prospectus_Classify$v1_full_link_classify.coverage" NAME="v1_full_link_classify Coverage Results" MODIFIED="1623564976105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pre_Prospectus_Classify$demo.coverage" NAME="demo Coverage Results" MODIFIED="1623139626086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
